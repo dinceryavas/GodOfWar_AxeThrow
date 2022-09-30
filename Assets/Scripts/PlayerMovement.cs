@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     void Start()
     {
+        Application.targetFrameRate = 60;
         axeThrowed = false;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;

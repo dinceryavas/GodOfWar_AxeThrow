@@ -29,11 +29,11 @@ public class Axe : MonoBehaviour
     {
         if(PlayerAnimation.axeThrow && isHit == false)
         {
-            transform.Rotate(new Vector3(0,0,-10));
+            transform.Rotate(new Vector3(0,0,-100));
         }
         if(PlayerAnimation.axeCall)
         {
-            transform.Rotate(new Vector3(0, 0, -10));
+            transform.Rotate(new Vector3(0, 0, -100));
             if (time < 1f)
             {
                 rb.position = getBQCPoint(time, oldPos, curvePos.position, returnPos.position);
